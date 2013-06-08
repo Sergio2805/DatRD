@@ -1,0 +1,161 @@
+<?php
+
+class articulos {
+           public $codigo;
+           public $nombre;
+           public $color;
+           public $costo;
+           public $precio;
+           public $ganancias;
+           public $categoria;
+           public $peso;
+           public $comentario;
+           public $fecha_insersion;
+           public $fecha_modificacion;
+           public $fhoy;
+         
+                 function __construct($codigo=0){
+	            date_default_timezone_set('America/New_York');							
+		     $this-> codigo=$codigo;	
+                     $this-> nombre="";	
+	             $this-> color="";	
+                     $this-> costo="";
+                     $this-> precio="";
+                     $this-> ganancia="";
+                     $this-> categoria="";
+                     $this-> peso="";
+  		     $this-> comentario="";
+                     $this-> fecha_insersion="";
+                     $this-> fecha_modificacion="";
+                     $this->fhoy= date("Y-m-d H:i:s");  
+	 
+	        } 
+              
+               static function getArticulo(){
+                         
+                        $sql="select M.*, (select count(*) from images where images.articulo=M.codigo) As fotos from articulos M";
+                        $final=array();
+                        $rs= mysql_query($sql);
+                     while($fila=mysql_fetch_assoc($rs)){
+ 
+                                 $final[]=$fila;
+                      }
+                          
+                      return $final;
+              } 
+       
+              function guardar(){
+                       
+                      if($this->codigo>0){
+                               
+                          $sql="update articulos set 
+                          nombre='{$this->nombre}',	
+	                  color='{$this->color}',	
+                          costo='{$this->costo}',
+                          precio='{$this->precio}',
+                          ganancia='{$this->ganancia}'
+                          categoria='{$this-> categoria}',
+                          peso='{$this->peso}',
+  		          comentario='{$this-> comentario}',
+                          fecha_modificacion='{$this->fhoy}'
+                          where codigo='{$this->codigo}'";
+                          
+                              mysql_query($sql);
+                                      echo mysql_error();
+                    
+                       }
+                     else{
+                 
+                        $sql="insert into articulos (nombre,color,costo, precio, ganancia,categoria,
+                                                     peso,comentario,fecha_insersion)
+                                                     values
+                                                      ('{$this->nombre}',	
+	                                              '{$this->color}',
+                                                      '{$this->costo}',
+                                                      '{$this->precio}',
+                                                      '{$this->ganancia}',
+                                                      '{$this->categoria}',
+                                                      '{$this->peso}',
+  		                                      '{$this->comentario}',
+                                                      '{$this->fhoy}')";
+                             mysql_query($sql);    
+
+                          
+                          $this->codigo=mysql_insert_id();
+                       }          
+
+         }    
+        
+           function cargar(){
+
+            $sql="select * from articulos where codigo='{$this->codigo}'";
+            $rs=mysql_query($sql);
+            
+            if(mysql_num_rows($rs)>0){
+                    $registro=mysql_fetch_assoc($rs);	
+                     $this-> nombre=$registro['nombre'];	
+	             $this-> color=$registro['color'];	
+                     $this-> costo=$registro['costo'];
+                     $this-> precio=$registro['precio'];
+                     $this-> categoria=$registro['categoria'];
+                     $this-> peso=$registro['peso'];
+  		     $this-> comentario=$registro['comentario'];
+                       
+
+
+             }
+     
+        
+          }
+
+         function agregarFoto($foto){
+        
+        $sql="insert into images (nombre,tipo,articulo) values ('{$foto['name']}','{$foto['type']}','{$this->codigo}')";
+        mysql_query($sql);
+      
+        $img=mysql_insert_id();
+        return $img;
+        
+
+       }
+
+     function obtenerFotos(){
+       $datos=array();
+      $sql="select * from images where articulo='{$this->codigo}'";
+      $rs=mysql_query($sql);
+    while($fila = mysql_fetch_assoc($rs)){
+
+      $datos[]=$fila['id'];
+
+        }
+    return $datos;
+
+
+
+     }
+   function quitarfoto($foto){
+    $sql="delete from images where id={$foto}";
+   mysql_query($sql);
+
+
+   }
+
+  static function eliminar($id){
+    $sql="delete from articulos where id={$id}";
+   mysql_query($sql);
+
+
+   }
+
+
+
+
+}
+
+
+
+
+
+
+
+?>

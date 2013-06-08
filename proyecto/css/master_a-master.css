@@ -1,0 +1,126 @@
+#u95
+{
+	background-size: contain !important;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	-khtml-background-size: contain;
+	-ms-background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+.listado{
+	width:100%;
+	background: white;
+	border:solid  #191970 3px;
+}
+
+.listado thead{
+	background:#696969;
+	color:white;
+}
+
+.interLineado{
+	background:#cccccc;
+}
+.centrado{
+margin:auto;
+
+text-align:center;
+}
+
+
+#u110
+{
+	vertical-align: top;
+	background: url("../images/2_menu-u110.png") no-repeat 0px 0px;
+	position: relative;
+}
+
+#u110:hover
+{
+	background: url("../images/2_menu-u110-r.png") no-repeat 0px 0px;
+}
+
+#u110:active
+{
+	background: url("../images/2_menu-u110-m.png") no-repeat 0px 0px;
+}
+
+#u109
+{
+	vertical-align: top;
+	background: url("../images/3_menu-u109.png") no-repeat 0px 0px;
+	position: relative;
+}
+
+#u109:hover
+{
+	background: url("../images/3_menu-u109-r.png") no-repeat 0px 0px;
+}
+
+#u109:active
+{
+	background: url("../images/3_menu-u109-m.png") no-repeat 0px 0px;
+}
+
+#u108
+{
+	vertical-align: top;
+	background: url("../images/1_menu-u108.png") no-repeat 0px 0px;
+	position: relative;
+}
+
+#u108:hover
+{
+	background: url("../images/1_menu-u108-r.png") no-repeat 0px 0px;
+}
+
+#u108:active
+{
+	background: url("../images/1_menu-u108-m.png") no-repeat 0px 0px;
+}
+
+#u111
+{
+	vertical-align: top;
+	background: url("../images/home-u111.png") no-repeat 0px 0px;
+	position: relative;
+}
+
+#u111:hover
+{
+	background: url("../images/home-u111-r.png") no-repeat 0px 0px;
+}
+
+#u111:active
+{
+	background: url("../images/home-u111-m.png") no-repeat 0px 0px;
+}
+
+#u80
+{
+	-pie-box-shadow: 6px 6px 8px #7F7F7F;
+	-moz-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 6px 6px 8px -1px rgba(0, 0, 0, 0.5);
+	box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+	background: -webkit-gradient(linear, center top, center bottom, color-stop(56%, #000000),to(#1F1F1F));
+	background: -webkit-linear-gradient(top,#000000 56%,#1F1F1F );
+	background: -moz-linear-gradient(top,#000000 56%,#1F1F1F );
+	background: -ms-linear-gradient(top,#000000 56%,#1F1F1F );
+	background: -o-linear-gradient(top,#000000 56%,#1F1F1F );
+	background: linear-gradient(to bottom,#000000 56%,#1F1F1F );
+	-pie-background: linear-gradient(top,#000000 56%,#1F1F1F );
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+}
+
+#u80_align_to_page,#u114-3
+{
+	position: relative;
+}
+

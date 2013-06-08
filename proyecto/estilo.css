@@ -1,0 +1,209 @@
+#divPagina{
+	border:solid 1px #cccccc;
+	width:95%;
+        min-height:800px;
+	margin:0 auto;
+	background:url(Images/fondo.jpg)no-repeat;
+       border-radius: 10px;
+       box-shadow: 12px 10px 10px black;
+}
+
+#divPortada{
+	height:180px;
+	background:url(Images/logo1.png)no-repeat;
+      background-size: 30%;
+     
+       background-position:center;
+       border:solid 2px #cccccc;  
+  
+        
+}
+
+#menu{ 
+
+padding:0pt;
+margin:0pt;
+
+}
+
+ul{
+list-style:none;
+   
+
+}
+
+.menu li ul{border-radius: 10pt; 
+   border:solid 2px #cccccc; 
+   background-color:black}
+.menu > li{       
+
+float:left;
+
+}
+
+.menu li a:hover{
+background-color:#B0C4DE;
+
+}
+
+#divCuerpos img{ 
+border: 1px solid black; 
+
+padding: 5px; 
+
+
+
+
+
+}
+
+#divCuerpos img:hover { 
+height:250px;
+
+
+
+}
+
+.color {
+
+background: white;
+
+}
+.menu li ul{
+display:none;
+position:absolute;
+min-width:140px;
+box-shadow: 12px 10px 10px white;
+}
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+.menu li a{
+
+background-color:black;
+text-decoration:none;
+color:white;
+padding:10px 15px;
+display:block; 
+text-align:center;
+}
+
+#Menu{
+margin:auto;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+width:800px;
+
+
+
+}
+.inicio{
+
+background:url(Images/banner.png);
+}
+
+
+input[type="text"]{
+width:570px;
+height:27px;
+
+
+
+}
+
+input[type="text"]:focus  {
+border: thin blue solid;
+
+}
+#divC{
+
+
+
+
+
+
+}
+
+
+input[type="text"]:hover {
+border: thin #999999 outset;
+filter:alpha(opacity=50);-moz-opacity:.5;opacity:.5;
+background: #FFFFFF;
+color: #000000;
+}
+
+#barra{
+
+margin:auto;
+
+text-align:center;
+
+
+}
+#divCuerpo{
+
+	height:450px
+       overflow:auto;
+       width:95%;
+      margin:auto; 
+}
+
+#divCuerpos{
+
+	min-height:450px;
+       width:75%;
+      margin:auto;
+}
+
+body{
+	
+	background:url(Images/fondo.jpg);
+	font-size:130%;
+}
+
+
+.centralizado{
+	text-align:center;
+}
+
+
+.listado{
+	width:100%;
+	background: white;
+	border:solid  #191970 3px;
+}
+
+.listado thead{
+	background:#696969;
+	color:white;
+}
+
+.interLineado{
+	background:#cccccc;
+}
+.centrado{
+margin:auto;
+
+text-align:center;
+}
+
+#divMenu{
+	text-align:right;
+}
+
+
+
+ul.ppt { position: relative; } 
+.ppt li { list-style-type: none; position: absolute; top:50px ;  right:10px; } 
+.ppt img { 
+border: 1px solid #B0C4DE; 
+border-radius:7pt;
+padding: 5px; 
+background-color: #ececec;
+width:250px;
+
+
+}
+
+
+
+
+
+
+

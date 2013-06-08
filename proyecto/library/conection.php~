@@ -1,0 +1,29 @@
+<?php
+
+
+
+$onCon=new conManeger();
+
+class conManeger{
+
+            public $instancia;
+
+            function __construct(){
+                 echo DB_HOST;
+               $this->instancia=mysql_connect(DB_HOST,DB_USER,DB_PASS); 
+               mysql_select_db(DB_NAME,$this->instancia);  
+
+
+           }
+         function __destruct(){
+    
+               mysql_close($this->instancia);  
+               }
+    
+
+  
+ 
+}
+
+
+?>

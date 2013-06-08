@@ -1,0 +1,35 @@
+<manifest alg="2" build="8" opt="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3896285136"/>
+    <file name="master_a-master.css" crc="400200416" ref="index"/>
+    <file name="index.css" crc="3861966997" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <folder name="1.1">
+      <file name="jquery-1.7.min.js" crc="526788486" ref="index"/>
+      <file name="museutils.js" crc="410024474" ref="index"/>
+      <file name="pie.js" crc="4067523484" ref="index"/>
+      <file name="pie.htc" crc="119515598" ref="index"/>
+      <file name="jquery.musepolyfill.bgsize.js" crc="432088147" ref="index"/>
+      <file name="jquery.tobrowserwidth.js" crc="3930036094" ref="index"/>
+      <file name="jquery.watch.js" crc="3882405427" ref="index"/>
+    </folder>
+  </folder>
+  <folder name="images">
+    <file name="fondo.jpg" crc="309064190" ref="index"/>
+    <file name="datrd-u95-fr.png" crc="177617496" ref="index"/>
+    <file name="2_menu-u110.png" crc="415505328" ref="index"/>
+    <file name="2_menu-u110-r.png" crc="3951098036" ref="index"/>
+    <file name="2_menu-u110-m.png" crc="3994584116" ref="index"/>
+    <file name="3_menu-u109.png" crc="282639661" ref="index"/>
+    <file name="3_menu-u109-r.png" crc="92998038" ref="index"/>
+    <file name="3_menu-u109-m.png" crc="4227064195" ref="index"/>
+    <file name="1_menu-u108.png" crc="4066787167" ref="index"/>
+    <file name="1_menu-u108-r.png" crc="4208552176" ref="index"/>
+    <file name="1_menu-u108-m.png" crc="3819265837" ref="index"/>
+    <file name="home-u111.png" crc="87781469" ref="index"/>
+    <file name="home-u111-r.png" crc="3845996030" ref="index"/>
+    <file name="home-u111-m.png" crc="3805222673" ref="index"/>
+  </folder>
+  <file name="index.html" crc="433598620" mt="1370707747561"/>
+</manifest>
